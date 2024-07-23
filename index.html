@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Envelope + Letter (Open/Close on Click)</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <title>heart letter by alexx_deev</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <div class="container">
-        <div class="envelope-wrapper">
-            <div class="envelope">
-                <div class="letter">
-                    <div class="text">
-                        <strong>Camila Anágua Luna.</strong>
-                        <p>
-                            A una amiga cercana,cuyo cariño y lealtad siempre me acompañan. 
-                            nuestra amistad es un tesoro que valoro cada día,
-                            agradesco todos los momentos compartidos, risas,apoyo mutuo.¡Feliz Dia de la Amistad!
-                                       
-                        </p>
-                    </div>
-                </div>
+    <audio src="ese.mp3" controls=""> </audio> 
+<div class="envlope-wrapper">
+    <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+            <div class="text">
+                <strong>"PROMO ESTEREO".</strong>
+                
+                <p>
+                    FELIZ 
+                    DIA 
+                    DE LA AMISTAD
+                 
+                </p>
+                
+                <center>
+                    <b>
+                        PUTITOS
+                    </b>
+                
+                </center>
             </div>
-            <div class="heart"></div>
+        <div class="hearts">
+            <div class="heart a1"></div>
+           
+            <div class="heart a2"></div>
+            <div class="heart a3"></div>
         </div>
     </div>
-    <script>
-        const envelope = document.querySelector('.envelope-wrapper');
-        envelope.addEventListener('click', () => {
-            envelope.classList.toggle('flap');
-        });
-    </script>
+</div>
+<div class="reset">
+    <button id="open">Open</button>
+    <button id="reset">Reset</button>
+</div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
